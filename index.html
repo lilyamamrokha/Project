@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sweet cake</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Belgrano|Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<span><a href="index.html">Sweet cake</a></span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#home">Головна</a></li>
+				<li><a href="#our-sweets">Наші смаколики</a></li>
+				<li><a href="#customer-choice">Вибір клієнтів</a></li>
+				<li><a href="#order">Замовлення</a></li>
+				<li><a href="#contacts">Контакти</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<div class="scoll-img">
+				<img src="img/macaryns.jpeg" alt="Тістечко">
+				<input type="button" name="left-button">
+				<input type="button" name="right-button">
+			</div>
+			<h1 class="logo">Sweet cake</h1>
+			<h2 class="header">Готуємо з любов'ю!</h2>
+			<p>Нас завжди надихає життєве кредо: «Виріб може бути кулінарним шедевром - тільки якщо він готується з любов'ю і з найяскравішими позитивними емоціями.»</p>
+		</section>
+		<section id="our-sweets">
+			<h2 class="header">Наші смаколики</h2>
+			<div class="container">
+				<ul>
+					<li>
+						<div>
+							<img class="box-one" src="img/cake.jpg" alt="Cake">
+						</div>
+						<a href="#cake.html">Торти</a>
+					</li>
+					<li>
+						<div>
+							<img class="box-one" src="img/cheesecake.jpg" alt="cheesecake">
+						</div>
+						<a href="#cake.html">Чізкейки</a>
+					</li>
+					<li>
+						<div>
+							<img class="box-one" src="img/ecler.jpg" alt="ecler">
+						</div>
+						<a href="#cake.html">Еклери</a>
+					</li>
+					<li>
+						<div>
+							<img class="box-one" src="img/cupcake.jpg" alt="cupcake">
+						</div>
+						<a href="#cake.html">Капкейки</a>
+					</li>
+					<li>
+						<div>
+							<img class="box-one" src="img/candybar.jpg" alt="candy-bar">
+						</div>
+						<a href="#cake.html">Кенді-бар</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="customer-choice">
+			<h2 class="header">Вибір наших клієнтів</h2>
+			<div class="container-customer-choice">
+				<ul>
+					<li>
+						<div class="choice-cake">
+							<div>
+								<img class="img-bloc" src="img/chocolate-cake.png" alt="chocolate-cake">
+							</div>
+							<p class="text-bloc">
+								<h2 class="header">Шоколадний</h2>
+								<h2 class="price">450 грн/кг</h2>
+								<p><i>шоколадний бісквіт, ромова пропитка, карамель з фундуком, хрусткий шар на основі молочного шоколаду, шоколадне кремю</i></p>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="choice-cake">
+							<div>
+								<img class="img-bloc" src="img/blueberries-cake.png" alt="blueberries-cake">
+							</div>
+							<p class="text-bloc">
+								<h2 class="header">Чорничні капкейки</h2>
+								<h2 class="price">від 40 грн/шт</h2>
+								<p><i>ванільний бісквіт з ніжним ванільним мусом на основі чорничного сиропу, з сезонними ягодами</i></p>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="choice-cake">
+							<div>
+								<img class="img-bloc" src="img/berry-cake.png" alt="berry-cake">
+							</div>
+							<p class="text-bloc">
+								<h2 class="header">Ягідна насолода</h2>
+								<h2 class="price">250 грн/кг</h2>
+								<p><i>ванільний бісквіт з ніжним кремом на основі сиру Маскарпоне, вишня або сезонні ягоди</i></p>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="scoll-customer-choice">
+				<input type="button" name="left-button">
+				<input type="button" name="right-button">
+			</div>
+		</section>
+		<section id="order">
+			<div class="candy-bar">
+				<h2 class="header">Кенді-бар на замовлення</h2>
+				<p>"Wow-ефект", місце для селфі, лаундж зона. 
+				Кенді-бар — це не просто столик з десертами. В одному місці зібране все, про що мріє кожен любитель солодкого, хіба не щастя?</p>
+				<img class="order-candybar" src="img/order-candybar.jpg" alt="candy-bar">
+			</div>
+			<div class="order">
+				<h2 class="header"> Зробити замовлення</h2>
+				<form action="https://formspree.io/xyygnqqa" method="POST">
+					<label>
+            			Ім'я:
+            			<input type="text" name="Ім'я" placeholder="Ваше ім'я">
+            		</label>
+					<br>
+					<label>
+            			E-Mail:
+            			<input type="text" name="E-Mail" placeholder="Електронна пошта">
+            		</label>
+					<br>
+					<label>Повідомлення:</label>
+					<br>
+					<textarea name="text" cols="50" rows="3" placeholder="Повідомлення"></textarea>
+					<br>
+					<input type="submit" value="Надіслати">
+				</form>
+			</div>
+		</section>
+		<section id="contacts">
+			<h2 class="header">Контакти</h2>
+			<div class="addres">
+				<div class="icon">
+					<img src="img/icon/navigation.png">
+				</div>
+				<h3>Адреса:</h3>
+				<p>ЛЬВІВ ВУЛ. ФРАНКА 80</p>
+			</div>
+			<div class="telephone">
+				<div class="icon">
+					<img src="img/icon/phone.png">
+				</div>
+				<h3>Телефон:</h3>
+				<p>+38 (050) 417 33 40 </p>
+			</div>
+			<div class="hours-work">
+				<div class="icon">
+					<img src="img/icon/clock.png">
+				</div>
+				<h3>Години роботи:</h3>
+				<p>ПН.-ПТ.
+				9:00 - 21:00</p>
+			</div>
+			<div class="e-mail">
+				<div class="icon">
+					<img src="img/icon/mail.png">
+				</div>
+				<h3>E-Mail:</h3>
+				<p>sweet_cake@gmail.com</p>
+			</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.6876925643364!2d24.029001815370638!3d49.82953473978999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add673a9ba1b9%3A0x774ec08c02d2d5e2!2z0LLRg9C70LjRhtGPINCG0LLQsNC90LAg0KTRgNCw0L3QutCwLCA4MCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1572799442916!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+		</section>		
+	</main>
+	<footer>
+		<section class="footer">
+			<div class="links">
+				<a href="https://www.instagram.com/lilya.antonyuk/"><img src="img/icon/instagram.png"></a>
+				<a href="https://www.facebook.com/lilya.antonuyk.3"><img src="img/icon/fb.png"></a>
+			</div>
+			<p>© 2019. Sweet cake</p>
+		</section>
+	</footer>
+
+</body>
+</html>
