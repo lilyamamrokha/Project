@@ -22,3 +22,4 @@ function submitForm(e) {
     })
         .then(_ => document.querySelector('.text-form').reset());
 }
+ 
