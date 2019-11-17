@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sweet cake</title>
+    <link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -78,7 +79,7 @@
 					<div class="text-bloc">
 						<h2 class="header">Шоколадний</h2>
 						<h2 class="price">450 грн/кг</h2>
-						<p><i>шоколадний бісквіт, ромова пропитка, карамель з фундуком, хрусткий шар на основі молочного шоколаду, шоколадне кремю</i></p>
+						<p><i>шоколадний бісквіт, ромова пропитка, карамель з фундуком, хрусткий шар на основі молочного шоколаду</i></p>
 					</div>
 				</div>
 				<div class="choice-cake">
@@ -86,7 +87,7 @@
 						<img src="img/blueberries-cake.png" alt="Чорничні капкейки">
 					</div>
 					<div class="text-bloc">
-						<h2 class="header">Чорничні капкейки</h2>
+						<h2 class="header">Чорничні</h2>
 						<h2 class="price">від 40 грн/шт</h2>
 						<p><i>ванільний бісквіт з ніжним ванільним мусом на основі чорничного сиропу, з сезонними ягодами</i></p>
 					</div>
@@ -104,35 +105,35 @@
 			</div>
 		</section>
 		<section id="order">
-			<div class="order">
-				<h2 class="header">Кенді-бар на замовлення</h2>
-				<p>"Wow-ефект", місце для селфі, лаундж зона.
-				Кенді-бар — це не просто столик з десертами. В одному місці зібране все, про що мріє кожен любитель солодкого, хіба не щастя?</p>
-				<img class="order-candybar" src="img/order-candybar.jpg" alt="Кенді-бар">
-			</div>
-			<div class="order">
-				<h2 class="header"> Зробити замовлення</h2>
-				<form action="https://formspree.io/xyygnqqa" method="POST">
+			<div class="order-block">
+                <div class="forma">
+				    <h2 class="header">Кенді-бар на замовлення</h2>
+				    <p>"Wow-ефект", місце для селфі, лаундж зона.
+				    Кенді-бар — це не просто столик з десертами. В одному місці зібране все, про що мріє кожен любитель солодкого, хіба не щастя?</p>
+				    <img class="order-candybar" src="img/order-candybar.jpg" alt="Кенді-бар">
+                </div>
+                <div class="forma">
+				<form  class="text-form" action="" method="">
+                <h2 class="header"> Зробити замовлення</h2>
 					<div class="input">
 						<label>
-            						Ім'я:<br>
-            						<input type="text" name="Ім'я" placeholder="Ваше ім'я">
-            					</label>
+            				Ім'я:<br>
+            				<input type="text" name="userName" placeholder="Ваше ім'я">
+            			</label>
 						<br>
 						<label>
-            						E-Mail:<br>
-            						<input type="text" name="E-Mail" placeholder="Електронна пошта">
-            					</label>
+            				E-Mail:<br>
+            				<input type="email" name="userMail" placeholder="Електронна пошта">
+            			</label>
 						<br>
 						<label>Повідомлення:</label>
 						<br>
-						<textarea name="text" cols="50" rows="3" placeholder="Повідомлення"></textarea>
+						<textarea name="userMessage" placeholder="Повідомлення"></textarea>
 						<br>
-						<div class="submit-botton">
-							<input class="submit" type="submit" value="Надіслати">
-						</div>
+						<button class="submit-botton">Надіслати</button>
 					</div>
 				</form>
+                <div>
 			</div>
 		</section>
 		<section id="contacts">
@@ -182,5 +183,6 @@
 			<p>© 2019. Sweet cake</p>
 		</div>
 	</footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
