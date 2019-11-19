@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Belgrano|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Sawarabi+Gothic&display=swap');
 h1, h2, h3, p, div, nav, header, footer, section {
 	margin: 0;
 	padding: 0;
 }
 :root {
-	font-family: 'Belgrano', serif;
 	scroll-behavior: smooth;
-	background: #fad2e0;
 }
 body {
 	max-width: 980px;
@@ -17,37 +15,35 @@ body {
     justify-content: center;
 	text-decoration: none;
 	text-align: center;
+    text-transform: none;
 	font-size: 48px;
 	color: #e93578;
 	font-family: 'Dancing Script', cursive;
 }
-header nav .menu {
-	display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    padding-top: 5px;
+header .nav-item a{
+    text-transform: uppercase;
 }
-header nav .menu a {
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 5px;
-	color: #000;
-	border: 1px solid transparent;
+header .nav-item .nav-link{
+   font-weight: bold;
+   margin: 10px;
 }
-
-header nav .menu a:hover {
-    border: 1px solid;
-    background: #e93578;
-    color:#fad2e0;
+header nav .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #b8416d;
+    height: 1px;
+    transform: scale(0);
+    transition: all .03s;
+}
+header nav .nav-item a:hover::after {
+   transform: scale(1);
 }
 @media (min-width: 650px) {
     header nav {
         display: flex;
         justify-content: center;
     }
-}
-header .menu {
-	flex:1;
 }
 .logo {
 	display: flex;
@@ -58,18 +54,17 @@ header .menu {
 	color: #e93578;
 	font-family: 'Dancing Script', cursive;
 }
-#home img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-size: cover;
-	padding-top: 10px;
-	width:100%;
-}
 .header {
 	font-size: 28px;
-	text-align: center;
-	padding: 20px;
+	font-family: 'Sawarabi Gothic', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+header .navbar-light {
+    background-color: #fad2e0;
+}
+main {
+    background-color: #fad2e0;
 }
 #home div .kredo {
 	max-width: 550px;
@@ -82,36 +77,36 @@ header .menu {
 	padding-bottom: 30px;
 	padding-top: 30px;
 }
-main .container article a {
+main .box article a {
 	display: flex;
 	justify-content: center;
     padding: 30px;
     font-size: 26px;
 }
-main .container article img {
+main .box article img {
     display: block;
     width: 100%;
 }
 @media (min-width: 550px) {
-    main #our-sweets .container {
+    main #our-sweets .box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
 }
 @media (min-width: 650px) {
-    main #our-sweets .container {
+    main #our-sweets .box {
 		grid-template-columns: 1fr 1fr 1fr;
         margin: 10px;
     }
 }
-.container a {
+.box a {
 	font-size: 20px;
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
 }
-.container a:hover {
+.box a:hover {
 	color: #f6a2bf
 }
 .price {
@@ -159,7 +154,6 @@ main .container article img {
 .order-block .order-candybar {
     display: flex;
     max-width: 100%;
-
 }
 @media (min-width:550px) {
     main #order .order-block {
@@ -175,7 +169,7 @@ main .container article img {
 }
 input {
     width: 100%;
-    max-height: 20px;
+    max-height: 40px;
     font-size: 18px;
     padding: 10px;
     border-radius: 20px/20px;
@@ -192,14 +186,19 @@ textarea {
     border-radius: 20px/20px;
     font-family: 'Belgrano', serif;
 }
-.submit-botton {
+::placeholder{
+    font-size: 18px;
+}
+.button {
+   width: 150px;
 	max-height: 40px;
 	margin: 20px;
-	padding: 10px;
+	padding: 5px;
 	font-size: 20px;
 	color: black;
 	background-color: #f6a2bf;
     border: none;
+    border-radius: 20px/20px;
 }
 #contacts {
     display: flex;

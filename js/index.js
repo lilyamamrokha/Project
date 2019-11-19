@@ -1,12 +1,6 @@
-
-
-document.querySelector('.text-form .submit-botton')
+document.querySelector('.text-form button[type=button]')
     .addEventListener('click', submitForm);
 
-function login(e) {
-    e.preventDefault();
-    
-}
 function submitForm(e) {
     e.preventDefault();
     fetch('makeorder', {
