@@ -39,12 +39,7 @@ header nav .nav-item a::after {
 header nav .nav-item a:hover::after {
    transform: scale(1);
 }
-@media (min-width: 650px) {
-    header nav {
-        display: flex;
-        justify-content: center;
-    }
-}
+
 .logo {
 	display: flex;
 	justify-content: center;
