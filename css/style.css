@@ -118,6 +118,7 @@ main .box article img {
 }
 .img-bloc img {
 	max-width: 100%;
+    padding-top: 20px;
 }
 .choice-cake {
 	display: flex;
