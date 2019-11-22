@@ -16,4 +16,20 @@ function submitForm(e) {
     })
         .then(_ => document.querySelector('.text-form').reset());
 }
+
+document.querySelector('#home .btn.btn-primary')
+    .addEventListener('click', rundomPrediction);
+function rundomPrediction() {
+    let phrases = [
+        "Замов торт \"Шоколадний\", смак тебе здивує!",
+        "Можливо не сьогодні?",
+        "Яке солодке? Топай в зал!!!",
+        "Тобі не зашкодить кілька сотень тістечок:)",
+        "Чізкейк просто неймовірний!",
+        "Еклери - це те, що тобі треба!",
+        "Глянь, що радять наші постійні клієнти! Вони знають, що найсмачніше)"
+    ];
+    let randomWord = phrases[Math.floor(Math.random() * phrases.length)];
+    document.getElementsByClassName("modal-body")[0].innerHTML=randomWord;
+}
  
